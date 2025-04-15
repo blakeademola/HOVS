@@ -1,0 +1,167 @@
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.social-iconn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1D1D1D;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for each icon */
+.social-icon.facebook:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+text {
+    text-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    filter: none;
+    transform: none;
+    text-rendering: optimizeLegibility;
+
+  }
+
+.social-icon.twitter:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.social-icon.instagram:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.social-icon.linkedin:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.social-icon.youtube:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.banner {
+    /* UI Properties */
+    /* background: transparent conic-gradient(from 181deg at 50% 50%, var(--unnamed-color-8a764b) 0.00%, #C9A456 100.00%) 0% 0% no-repeat padding-box; */
+    background: transparent conic-gradient(from 181deg at 50% 50%, #8A764B 0.00%, #C9A456 100.00%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+    z-index: 20;
+}
+
+.banner img {
+    border-radius: 24px;
+}
+
+.hob {
+    width: 250px;
+}
+
+main {
+    /* background: transparent linear-gradient(0deg, #00000000 0%, #000000BA 59%, #000000 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(0deg, #00000000 0%, #000000BA 59%, #000000 100%) 0% 0% no-repeat padding-box; */
+    background-color: #171616;
+    opacity: 1;
+}
+
+.full-width-bar {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.my-svg path {
+    fill: #8a764b;
+  }
+  /* Change fill to white on hover */
+  .my-svg:hover path {
+    fill: #FFFFFF;
+  }
+
+.image-container {
+    position: relative;
+    z-index: -20;
+}
+
+/* For smoother transitions */
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+.translate-x-0 {
+    transform: translateX(0);
+}
+
+.translate-x-full {
+    transform: translateX(100%);
+}
+
+.-translate-x-full {
+    transform: translateX(-100%);
+}
+
+.kumbh-sans {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+@media (max-width: 640px) {
+    .social-icon {
+      display: none;
+    }
+  }
+
+
+
+.c-out-house{
+    z-index: 2;
+}
+
+.c-get-in-touch{
+    letter-spacing: .17rem;
+    font-weight: 200;
+}
+
+.c-image-wrapper{          /* Clip the overlay & image */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7); /* "Lifted" shadow */
+}
+
+.c-image-wrapper-2 {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+}
+
+.c-absolute-middle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-13%, -46%);
+}
