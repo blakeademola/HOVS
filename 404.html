@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie</title>
+    <title>400 - Not Found</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=east" /> -->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.coicon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 
@@ -22,7 +18,7 @@
     <section class="bg-[#f1ede7]">
         <header class="md:h-[120px] bg-black shadow-none h-[80px] flex">
             <div class="w-[85%] mx-auto flex justify-between justify-center items-center">
-                <div class="hidden md:flex space-x-6 flex-1">
+                <div class="hidden md:flex space-x-6 flex-1 kumbh-sans">
                     <a href="index.html">
                         <h2 class="text-[16px] cursor-pointer text-white">Home</h2>
                     </a>
@@ -111,22 +107,6 @@
                         <img src="./images/linkedin-header.svg" />
                     </div>
                 </div>
-                <!-- <div class="social-icons flex-1">
-                    <div class="social-icon facebook">
-                        <span class="material-icons text-white hover:text-[#C9A456]">
-                            photo_camera
-                        </span>
-                    </div>
-                    <div class="social-icon twitter">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <div class="social-icon instagram">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                    <div class="social-icon linkedin">
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-                </div> -->
                 <div class="p-1 border-1 border border-white block md:hidden">
                     <button id="menuButton" class="text-white border-1 border-white block md:hidden focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -137,70 +117,25 @@
                     </button>
                 </div>
             </div>
-
         </header>
-
-        <div id="sideMenu"
-            class="fixed top-0 left-0 h-screen w-64 bg-black text-white transform -translate-x-full transition-transform z-50">
-            <!-- Close button -->
-            <div class="p-4 flex justify-between items-center">
-                <div class="w-[40px] flex-1 mx-auto cursor-pointer">
-                    <img src="./images/logo (2).png" class="w-1/2" />
-                </div>
-                <button id="closeButton" class="text-gray-400  hover:text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
+        <main class="md:min-h-[100vh] min-h-[40vh] relative">
+            <!-- <div class="relative"> -->
+            <div class="absolute md:top-[50%] top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <h2 class="text-[#212529] md:text-[450px] text-[150px] font-bold kumbh-sans">404</h2>
             </div>
+            <div class="flex md:min-h-[100vh] min-h-[50vh] md:w-[45%] w-[90%] mx-auto justify-center items-center space-y-4">
+                <div class="text-[#ffffffde] z-10 text-center py-3 md:space-y-3 space-y-2">
+                    <h2 class="md:text-3xl text-2xl kumbh-sans">So sorry</h2>
+                    <p class="md:text-3xl text-2xl kumbh-sans">We couldn't find what you were looking for..</p>
+                        <a href="/">
+                            <button class="bg-[#8a764b] w-full md:w-auto mt-[20px] text-[#171616] py-2 px-4 rounded-[24px] font-semibold">BACK TO HOMEPAGE</button>
+                        </a>
+                       
+                </div>
 
-            <!-- Menu items -->
-            <nav class="mt-4 kumbh-sans text-[#ffffffde] flex flex-col min-h-[85vh]">
-                <a href="/" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">Home</a>
-                <a href="/about.html" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">About Us</a>
-                <div class="border-b border-gray-700 mt-4"></div>
-                <div class="py-6 flex-1">
-                    <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">Instagram</a>
-                    <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">Twitter</a>
-                    <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">facebook</a>
-                    <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">Linkedln</a>
-                </div>
-                <p class="pl-4 text-sm">@2025 House of Vision Limited.</p>
-            </nav>
-        </div>
-        <!-- Overlay to close menu when clicking outside -->
-        <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
-        <div class="md:py-20 py-12 md:w-[75%] w-[90%] mx-auto">
-            <h2 class="md:text-[120px] text-[40px] leading-none font-bold text-center">Cookie <br
-                    class="block md:hidden" /> Notice</h2>
-            <div class="py-8 kumbh-sans text-[#000000DE]">
-                <div class="py-2 space-y-3">
-                    <h2 class="text-lg font-semibold">Effective Date: May 20, 2019</h2>
-                    <h2 class="text-lg font-semibold">Last Reviewed Date: January 28, 2025</h2>
-                    <p>Octagon, Inc. (“Octagon”) respects your concerns about privacy. This Online Privacy Notice
-                        describes the types of personal information we collect about individuals on www.Octagon.com (the
-                        “Site”), how we may use the information, with whom we may share it, and the choices available
-                        regarding our use of the information. The Online Privacy Notice also describes the measures we
-                        take to safeguard the personal information, how long we retain it and how individuals can
-                        contact us about our privacy practices and to exercise their rights.</p>
-                    <p>Click on one of the links below to jump to the listed section:</p>
-                    <div>
-                        <p class="underline">Information We Obtain</p>
-                        <p class="underline">Automated Collection of Data</p>
-                        <p class="underline">How We Use the Information We Obtain</p>
-                        <p class="underline">Information Sharing</p>
-                        <p class="underline">Data Transfer</p>
-                    </div>
-                    <h2 class="font-semibold text-lg">Information We Obtain</h2>
-                    <p>We may collect and store personal information (such as name and other contact details) that you
-                        choose to provide to us when you provide them through the Site or when you contact us.<br /> The
-                        types
-                        of personal information we collect may include:</p>
-                </div>
             </div>
-        </div>
+            <!-- </div> -->
+        </main>
         <footer class="py-10 bg-black">
             <div class="md:w-4/5 w-[90%] mx-auto">
 
@@ -286,11 +221,11 @@
                             <div class="social-iconn linkedin">
                                 <img src="./images/twitter-footer.svg" />
                             </div>
-                          
+
                             <div class="social-iconn">
                                 <img src="./images/facebook-footer.svg" />
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -328,8 +263,7 @@
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm"><a href="./privacy.html">Privacy Notice</a> | <a
-                            href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a></p>
+                    <p class="text-[#ffffffde] text-sm"><a href="./privacy.html">Privacy Notice</a> | <a href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a></p>
                 </div>
                 <div class="py-3 space-y-2 block md:hidden text-white">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
@@ -341,34 +275,6 @@
             </div>
         </footer>
     </section>
-
-    <script>
-        // Get elements
-        const menuButton = document.getElementById('menuButton');
-        const closeButton = document.getElementById('closeButton');
-        const sideMenu = document.getElementById('sideMenu');
-        const overlay = document.getElementById('overlay');
-
-        // Open menu function
-        function openMenu() {
-            sideMenu.classList.remove('-translate-x-full');
-            sideMenu.classList.add('translate-x-0');
-            overlay.classList.remove('hidden');
-        }
-
-        // Close menu function
-        function closeMenu() {
-            sideMenu.classList.remove('translate-x-0');
-            sideMenu.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
-        }
-
-        // Event listeners
-        menuButton.addEventListener('click', openMenu);
-        closeButton.addEventListener('click', closeMenu);
-        overlay.addEventListener('click', closeMenu);
-    </script>
-
 </body>
 
 </html>

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=east" /> -->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 
@@ -21,9 +24,9 @@
             <header
                 class="md:h-[120px] h-[80px] md:mt-4 flex justify-between justify-center items-center max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
                 <div class="hidden md:flex space-x-6 flex-1">
-                    <h2 class="text-[16px] cursor-pointer text-white">Home</h2>
+                    <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">Home</h2>
                     <a href="about.html">
-                        <h2 class="text-[16px] cursor-pointer text-white">About us</h2>
+                        <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">About us</h2>
                     </a>
                 </div>
                 <div class="md:flex-1">
@@ -93,20 +96,18 @@
                         </svg>
                     </div>
                 </div>
-                <div class="social-icons flex-1">
-                    <div class="social-icon facebook">
-                        <span class="material-icons text-white hover:text-[#C9A456]">
-                            photo_camera
-                        </span>
+                <div class="social-icons md:flex hidden flex-1">
+                    <div class="cursor-pointer">
+                        <img src="./images/camera-header.svg" />
                     </div>
-                    <div class="social-icon twitter">
-                        <i class="fab fa-twitter"></i>
+                    <div class="cursor-pointer">
+                        <img src="./images/X logo.svg" />
                     </div>
-                    <div class="social-icon instagram">
-                        <i class="fab fa-facebook"></i>
+                    <div class="cursor-pointer">
+                        <img src="./images/facebook-header.svg" />
                     </div>
-                    <div class="social-icon linkedin">
-                        <i class="fab fa-linkedin-in"></i>
+                    <div class="cursor-pointer">
+                        <img src="./images/linkedin-header.svg" />
                     </div>
                 </div>
                 <div class="p-1 border-1 border border-white block md:hidden">
@@ -218,44 +219,10 @@
             <!-- <hr class="h-px my-2 bg-gray-200 opacity-30 border-0"> -->
             <div class="relative">
                 <div class="absolute top-[45%] w-full">
-                    <div class="py-4 min-w-[100vw] bg-[#8A764B] flex flex-row justify-betweeen items-center rotate-2" style="justify-content: space-between;">
-                        <div class="flex space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="flex space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                        </div>
+                    <div class="rotate-2">
+                        <img src="./images/slant-1.svg" class="!min-w-full !max-w-none" />
                     </div>
+
                 </div>
                 <section class="py-2 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
                     <!-- <div class="absolute h-[10] min-w-[100vw] -rotate-2 border-y py-6 border-[#C9A456]">
@@ -270,13 +237,13 @@
                                 YOUR <br /> VISION
                             </h2>
                         </div>
-                        <!-- <img src="/images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh] "
+                        <!-- <img src="./images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh] "
                             alt="Hero image" /> -->
                         <!-- <div class="full-width-bar -rotate-2 h-16 bg-blue-600 -mt-8"></div> -->
 
 
                         <div class="c-image-wrapper relative w-full min-h-[80vh] overflow-hidden rounded-3xl">
-                            <img src="/images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh]"
+                            <img src="./images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh]"
                                 alt="Hero image" />
 
                             <!-- Overlay -->
@@ -307,13 +274,16 @@
                         <br />
                         AFRICA
                     </h2>
-                    <p class="text-center text-[#ffffffde] text-lg">Founded in 2024 by a group of experienced
+                    <p class="text-center text-[#ffffffde]  text-xl kumbh-sans">Founded in 2024 by a group of
+                        experienced
                         international
                         executives from
                         Nigeria, we’re a leading agency for African sports, culture, and entertainment, with a goal to
                         represent African athletes and nurture their success on and off the field.</p>
                     <div class="flex items-center flex-1">
-                        <button class="border-[#C9A456] text-[#8A764B] border py-3 px-8 rounded-[24px]">OUR TEAM CAN
+                        <button
+                            class="border-[#C9A456] text-[#8A764B] border py-3 px-8 rounded-[24px] kumbh-sans font-semibold">OUR
+                            TEAM CAN
                             HELP</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
@@ -342,63 +312,18 @@
                     </div> -->
                 </div>
             </section>
-            <div>
-                <div class="py-4 min-w-[100vw] border-y border-[#8A764B] flex flex-row justify-betweeen items-center -rotate-2" style="justify-content: space-between;">
-                    <div class="flex md:space-x-10 space-x-8 items-center">
-                        <h2 class="text-[#8a764b] whitespace-nowrap font-bold text-2xl">FVISON SPORTS</h2>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-8 w-auto"
-                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                            <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                <path id="Path_89" data-name="Path 89"
-                                    d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                    fill="#8a764b" /* fill: red; */&#10;" />
-                            </g>
-                        </svg> -->
-                    </div>
-                    <div class="flex md:space-x-10 px-8 md:px-0 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-8 w-auto"
-                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                            <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                <path id="Path_89" data-name="Path 89"
-                                    d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                    fill="#8a764b" /* fill: red; */&#10;" />
-                            </g>
-                        </svg>
-                        <h2 class="text-[#8a764b] whitespace-nowrap font-bold text-2xl">HOUSE OF VISION SPORTS</h2>
-                        
-                    </div>
-                    <div class="flex space-x-6 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-8 w-auto"
-                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                        <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                            <path id="Path_89" data-name="Path 89"
-                                d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                fill="#8a764b" /* fill: red; */&#10;" />
-                        </g>
-                    </svg>
-                        <h2 class="text-[#8a764b] whitespace-nowrap font-bold text-2xl">HOUSE OF VISION SPORTS</h2>
-                       
-                    </div>
-                    <div class="flex space-x-6 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-8 w-auto"
-                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                            <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                <path id="Path_89" data-name="Path 89"
-                                    d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                    fill="#8a764b" /* fill: red; */&#10;" />
-                            </g>
-                        </svg>
-                        <h2 class="text-[#8a764b] whitespace-nowrap font-bold text-2xl">HOUSE OF VISIO</h2>
-                    </div>
+            <div class="md:py-24">
+                <div class="-rotate-3">
+                    <img src="./images/House Of Vision.svg" class="!min-w-full !max-w-none" />
                 </div>
             </div>
             <section
                 class="py-10 flex flex-col md:flex-row w-full md:gap-8 gap-12 justify-between items-end max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
                 <div class="md:w-1/4 w-4/5 mx-auto md:space-y-8 space-y-4 md:mb-[-100px]">
                     <img src="./images/basketball girl.png" />
-                    <p class="text-[#ffffffde] text-xl">You could be one of the <br />success stories.</p>
+                    <p class="text-[#ffffffde] text-xl kumbh-sans">You could be one of the <br />success stories.</p>
                     <div class="flex space-x-2 items-center">
-                        <p class="text-[#ffffffde] cursor-pointer">Get in touch</p> &nbsp;
+                        <p class="text-[#ffffffde] cursor-pointer kumbh-sans">Get in touch</p> &nbsp;
                         <span class="material-icons text-[#C9A456]  text-[16px]">
                             east
                         </span>
@@ -411,12 +336,14 @@
                         WITH <br />
                         PRECISION
                     </h2>
-                    <p class="text-center text-[#ffffffde]">Africa’s finest—managed by the best in Africa. We proudly
+                    <p class="text-center text-[#ffffffde] text-xl kumbh-sans">Africa’s finest—managed by the best in
+                        Africa. We proudly
                         represent the
                         finest artists, athletes, and talents from Africa, managed and guided by a team that embodies
                         the very spirit and excellence of the continent.</p>
                     <div class="flex items-center">
-                        <button class="border-[#C9A456] text-[#8A764B] border py-3 px-12 rounded-[24px]">START
+                        <button
+                            class="border-[#C9A456] text-[#8A764B] font-semibold border py-3 px-12 rounded-[24px]">START
                             TODAY</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
@@ -428,11 +355,13 @@
                 </div>
                 <div class="md:w-1/3 w-[90%] mx-auto md:space-y-8 space-y-4">
                     <img src="./images/Leg on basketball.png" />
-                    <p class="text-[#ffffffde] text-xl md:w-4/5">Being part of excellence <br />starts with reaching
-                        out.</p>
+                    <p class="text-[#ffffffde] text-xl md:w-4/5 text-xl kumbh-sans">Being part of excellence
+                        <br />starts with reaching
+                        out.
+                    </p>
                     <div class="flex space-x-2 items-center">
-                        <p class="text-[#ffffffde] cursor-pointer">Get in touch</p> &nbsp;
-                        <span class="material-icons text-[#C9A456] text-[16px]">
+                        <p class="text-[#ffffffde] cursor-pointer kumbh-sans">Get in touch</p> &nbsp;
+                        <span class="material-icons text-[#C9A456] text-[16px] ">
                             east
                         </span>
                     </div>
@@ -440,64 +369,12 @@
             </section>
             <div class="relative">
                 <div class="absolute md:top-[55%] top-[45%] w-full">
-                    <div class="py-4 min-w-[100vw] bg-[#8A764B] flex flex-row justify-betweeen items-center rotate-2" style="justify-content: space-between;">
-                        <div class="flex space-x-2 px-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="flex space-x-2 px-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="flex space-x-2 px-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                        </div>
+                    <div class="rotate-3">
+                        <img src="./images/slant-1.svg" class="!min-w-full !max-w-none" />
                     </div>
                 </div>
-                <section class=" my-[35px] md:my-0 md:pt-[150px]  flex justify-between gap-8 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
+                <section
+                    class=" my-[35px] md:my-0 md:pt-[150px]  flex justify-between gap-8 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
                     <div class="z-10">
                         <img src="./images/BallGirl.png" class="rounded-[24px] h-[240px] md:h-auto object-cover" />
                     </div>
@@ -513,14 +390,16 @@
                         class="md:text-[70px] text-[60px] leading-[50px] text-white font-bold md:leading-none text-center uppercase">
                         Level Up <br />Your
                         Legacy</h2>
-                    <p class="text-center text-white text-xl md:w-3/5 mx-auto">We are the bridge between where your
+                    <p class="text-center text-white text-xl md:w-3/5 mx-auto kumbh-sans">We are the bridge between
+                        where your
                         career is
                         now
                         and where it
                         can go. Our goal is to ensure that when you look back, you see every move was the right one.
                         Play, compete, and become your best—that’s the vision.</p>
                     <div class="flex items-center flex-1">
-                        <button class="border-[#C9A456] text-[#8a764b] border py-3 px-8 rounded-[24px]">LEARN
+                        <button
+                            class="border-[#C9A456] text-[#8a764b] font-semibold border py-3 px-8 rounded-[24px]">LEARN
                             MORE</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
@@ -533,60 +412,26 @@
             </section>
             <div class="relative">
                 <div class="absolute top-[45%] w-full">
-                    <div class="py-4 min-w-[100vw] bg-[#8A764B] flex flex-row justify-betweeen items-center -rotate-2" style="justify-content: space-between;">
-                        <div class="flex space-x-2 px-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="flex space-x-2 px-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-auto"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
-                                <g id="Group_157" data-name="Group 157" transform="translate(0)">
-                                    <path id="Path_89" data-name="Path 89"
-                                        d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
-                                        fill="#fffff" /* fill: red; */&#10;" />
-                                </g>
-                            </svg>
-                        </div>
+                    <div class="rotate-3">
+                        <img src="./images/slant-1.svg" class="!min-w-full !max-w-none" />
                     </div>
                 </div>
-                <section
-                class="md:py-10 md:pb-24 pb-8  items-center justify-center p-3 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
-                <div class="banner md:min-h-[90vh] items-center justify-center p-3 relative">
-                    <!-- <img src="./images/Girl holding ball high.png" class="mx-auto object-contain shadow-xl" /> -->
-                    <div class="c-image-wrapper relative overflow-hidden rounded-3xl">
-                        <img src="./images/Girl holding ball high.png" class="mx-auto object-contain"
-                            alt="high image" />
 
-                        <!-- Overlay -->
-                        <!-- <div class="absolute inset-0 bg-black bg-opacity-30"></div> -->
+                <section
+                    class="md:py-10 md:pb-24 pb-8  items-center justify-center p-3 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
+                    <div class="banner md:min-h-[90vh] items-center justify-center p-3 relative">
+                        <!-- <img src="./images/Girl holding ball high.png" class="mx-auto object-contain shadow-xl" /> -->
+                        <div class="c-image-wrapper relative overflow-hidden rounded-3xl">
+                            <img src="./images/Girl holding ball high.png" class="mx-auto object-contain"
+                                alt="high image" />
+
+                            <!-- Overlay -->
+                            <!-- <div class="absolute inset-0 bg-black bg-opacity-30"></div> -->
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
             </div>
-           
+
         </div>
         <footer class="py-10 bg-black">
             <div class="md:w-4/5 w-[90%] mx-auto">
@@ -665,17 +510,19 @@
                         <h2 class="text-white text-xl">Follow Us</h2>
                         <div class="social-icons flex-1">
                             <div class="social-iconn facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </div>
-                            <div class="social-iconn twitter">
-                                <i class="fab fa-twitter"></i>
+                                <img src="./images/linkedin-footer.svg" />
                             </div>
                             <div class="social-iconn instagram">
-                                <i class="fab fa-instagram"></i>
+                                <img src="./images/camera-footer.svg" />
                             </div>
                             <div class="social-iconn linkedin">
-                                <i class="fab fa-linkedin-in"></i>
+                                <img src="./images/twitter-footer.svg" />
                             </div>
+                          
+                            <div class="social-iconn">
+                                <img src="./images/facebook-footer.svg" />
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -684,43 +531,47 @@
                     <div class="flex md:space-x-4">
                         <div class="h-14 border-l border-[0.2] hidden md:block border-[#C9A456]"></div>
                         <div class="space-y-2">
-                            <h2 class="text-white text-lg font-semibold">Inquire</h2>
-                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
+                            <h2 class="text-white text-lg kumbh-sans font-semibold">Inquire</h2>
+                            <p class="text-[#ffffffde] kumbh-sans text-sm">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
                     <div class="flex md:space-x-4">
                         <div class="h-14 border-l hidden md:block border-[0.2] border-[#C9A456]"></div>
                         <div class="space-y-2">
-                            <h2 class="text-white text-lg">Talent Representation</h2>
-                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
+                            <h2 class="text-white text-lg kumbh-sans">Talent Representation</h2>
+                            <p class="text-[#ffffffde] text-sm kumbh-sans">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
                     <div class="flex md:space-x-4">
                         <div class="h-14 border-l hidden md:block border-[0.2] border-[#C9A456]"></div>
                         <div class="space-y-2">
-                            <h2 class="text-white text-lg">Press & Media</h2>
-                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
+                            <h2 class="text-white text-lg kumbh-sans">Press & Media</h2>
+                            <p class="text-[#ffffffde] text-sm kumbh-sans">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
                     <div class="flex md:space-x-4">
                         <div class="h-14 border-l hidden md:block border-[0.2] border-[#C9A456]"></div>
                         <div class="space-y-2">
-                            <h2 class="text-white text-lg">Careers</h2>
-                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
+                            <h2 class="text-white text-lg kumbh-sans">Careers</h2>
+                            <p class="text-[#ffffffde] text-sm kumbh-sans">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
                 </div>
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
-                    <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm"><a href="./privacy.html">Privacy Notice</a> | <a href="./cookie.html">Cookie Notice</a> | Terms and Conditions</p>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans">@2025 House of Vision</p>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./privacy.html">Privacy Notice</a> |
+                        <a href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a>
+                    </p>
                 </div>
                 <div class="py-3 space-y-2 block md:hidden text-white">
-                    <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
+                    <p class="text-[#ffffffde] text-sm kumbh-sans">@2025 House of Vision Limited</p>
                     <p class="py-3"></p>
-                    <p class="text-[#ffffffde] text-sm"> <a href="./privacy.html">Privacy Notice</a></p>
-                    <p class="text-[#ffffffde] text-sm"> <a href="./cookie.html">Cookie Notice</a></p>
-                    <p class="text-[#ffffffde] text-sm"><a href="">Terms and Conditions</a></p>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"> <a href="./privacy.html">Privacy Notice</a>
+                    </p>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"> <a href="./cookie.html">Cookie Notice</a>
+                    </p>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./terms.html">Terms and Conditions</a></p>
                 </div>
             </div>
         </footer>

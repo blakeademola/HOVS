@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Privacy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=east" /> -->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 
@@ -20,7 +23,7 @@
     <section class="bg-[#f1ede7]">
         <header class="md:h-[120px]  bg-black shadow-none h-[80px] flex">
             <div class="w-[85%] md:mt-4 mx-auto flex justify-between justify-center items-center">
-                <div class="hidden md:flex space-x-6 flex-1">
+                <div class="hidden md:flex space-x-6 flex-1 kumbh-sans">
                     <a href="index.html">
                         <h2 class="text-[16px] cursor-pointer text-white">Home</h2>
                     </a>
@@ -95,20 +98,18 @@
                         </svg>
                     </div>
                 </div>
-                <div class="social-icons flex-1">
-                    <div class="social-icon facebook">
-                        <span class="material-icons text-white hover:text-[#C9A456]">
-                            photo_camera
-                        </span>
+                <div class="social-icons flex md:flex hidden flex-1">
+                    <div class="cursor-pointer">
+                        <img src="./images/camera-header.svg"/>
                     </div>
-                    <div class="social-icon twitter">
-                        <i class="fab fa-twitter"></i>
+                    <div class="cursor-pointer">
+                        <img src="./images/X logo.svg"/>
                     </div>
-                    <div class="social-icon instagram">
-                        <i class="fab fa-facebook"></i>
+                    <div class="cursor-pointer">
+                        <img src="./images/facebook-header.svg"/>
                     </div>
-                    <div class="social-icon linkedin">
-                        <i class="fab fa-linkedin-in"></i>
+                    <div class="cursor-pointer">
+                        <img src="./images/linkedin-header.svg"/>
                     </div>
                 </div>
                 <button id="menuButton" class="text-white block md:hidden focus:outline-none">
@@ -156,13 +157,13 @@
         </div>
         <!-- Overlay to close menu when clicking outside -->
         <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
-        <div class="py-12 md:w-[75%] w-[90%] mx-auto">
+        <div class="md:py-20 py-12 md:w-[75%] w-[90%] mx-auto">
             <h2 class="md:text-[120px] text-[40px] leading-none font-bold text-center">Privacy <br
                     class="block md:hidden" /> Notice</h2>
-            <div class="py-8">
-                <div class="py-2 space-y-3">
-                    <h2>Effective Date: May 20, 2019</h2>
-                    <h2>Last Reviewed Date: January 28, 2025</h2>
+            <div class="py-8 kumbh-sans text-[#000000DE]">
+                <div class="py-2 space-y-3"> 
+                    <h2 class="text-lg font-semibold">Effective Date: May 20, 2019</h2>
+                    <h2 class="text-lg font-semibold">Last Reviewed Date: January 28, 2025</h2>
                     <p>Octagon, Inc. (“Octagon”) respects your concerns about privacy. This Online Privacy Notice
                         describes the types of personal information we collect about individuals on www.Octagon.com (the
                         “Site”), how we may use the information, with whom we may share it, and the choices available
@@ -172,14 +173,14 @@
                     <p>Click on one of the links below to jump to the listed section:</p>
                     <div>
                         <p class="underline">Information We Obtain</p>
-                        <p class="underline">Information We Obtain</p>
-                        <p class="underline">Information We Obtain</p>
-                        <p class="underline">Information We Obtain</p>
-                        <p class="underline">Information We Obtain</p>
+                        <p class="underline">Automated Collection of Data</p>
+                        <p class="underline">How We Use the Information We Obtain</p>
+                        <p class="underline">Information Sharing</p>
+                        <p class="underline">Data Transfer</p>
                     </div>
-                    <h2>Information We Obtain</h2>
+                    <h2 class="font-semibold text-lg">Information We Obtain</h2>
                     <p>We may collect and store personal information (such as name and other contact details) that you
-                        choose to provide to us when you provide them through the Site or when you contact us. The types
+                        choose to provide to us when you provide them through the Site or when you contact us.<br/> The types
                         of personal information we collect may include:</p>
                 </div>
             </div>
@@ -255,23 +256,25 @@
                         </svg>
                     </div>
 
-                    <hr class="h-px my-8 bg-gray-200 opacity-30 border-0">
+                    <hr class="h-px my-8 bg-gray-200 opacity-30 border-0">  
 
                     <div class="space-y-4">
                         <h2 class="text-white text-xl">Follow Us</h2>
                         <div class="social-icons flex-1">
                             <div class="social-iconn facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </div>
-                            <div class="social-iconn twitter">
-                                <i class="fab fa-twitter"></i>
+                                <img src="./images/linkedin-footer.svg" />
                             </div>
                             <div class="social-iconn instagram">
-                                <i class="fab fa-instagram"></i>
+                                <img src="./images/camera-footer.svg" />
                             </div>
                             <div class="social-iconn linkedin">
-                                <i class="fab fa-linkedin-in"></i>
+                                <img src="./images/twitter-footer.svg" />
                             </div>
+                          
+                            <div class="social-iconn">
+                                <img src="./images/facebook-footer.svg" />
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -309,14 +312,14 @@
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm"><a href="./privacy.html">Privacy Notice</a> | <a href="./cookie.html">Cookie Notice</a> | Terms and Conditions</p>
+                    <p class="text-[#ffffffde] text-sm"><a href="./privacy.html">Privacy Notice</a> | <a href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a></p>
                 </div>
                 <div class="py-3 space-y-2 block md:hidden text-white">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
                     <p class="py-3"></p>
                     <p class="text-[#ffffffde] text-sm"> <a href="./privacy.html">Privacy Notice</a></p>
                     <p class="text-[#ffffffde] text-sm"> <a href="./cookie.html">Cookie Notice</a></p>
-                    <p class="text-[#ffffffde] text-sm"><a href="">Terms and Conditions</a></p>
+                    <p class="text-[#ffffffde] text-sm"><a href="./terms.html">Terms and Conditions</a></p>
                 </div>
             </div>
         </footer>
