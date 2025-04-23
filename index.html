@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>HOVS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="./images/svgs/minilogo.svg">
 </head>
 
 <body>
@@ -237,6 +239,7 @@
                                 YOUR <br /> VISION
                             </h2>
                         </div>
+
                         <!-- <img src="./images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh] "
                             alt="Hero image" /> -->
                         <!-- <div class="full-width-bar -rotate-2 h-16 bg-blue-600 -mt-8"></div> -->
@@ -262,9 +265,34 @@
                             </div>
                             <h2 class="c-get-in-touch text-white text-[20px] ">GET IN TOUCH</h2>
                         </div>
-
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <button
+                                class="animate-pulse-custom cursor-pointer bg-[#8a764B] hover:bg-[#a88f5e] text-white font-bold h-24 w-24 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+                                id="playButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </section>
+            </div>
+
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" id="closeModal">&times;</span>
+                    <div class="relative pt-0 pb-9 h-0" style="padding-bottom: 56.25%;">
+                        <iframe id="youtubeIframe" class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/zxW1swhn-g4?autoplay=1&start=30"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                            picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
             </div>
 
             <section
@@ -518,11 +546,11 @@
                             <div class="social-iconn linkedin">
                                 <img src="./images/twitter-footer.svg" />
                             </div>
-                          
+
                             <div class="social-iconn">
                                 <img src="./images/facebook-footer.svg" />
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -571,7 +599,8 @@
                     </p>
                     <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"> <a href="./cookie.html">Cookie Notice</a>
                     </p>
-                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./terms.html">Terms and Conditions</a></p>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./terms.html">Terms and
+                            Conditions</a></p>
                 </div>
             </div>
         </footer>
@@ -602,6 +631,40 @@
         menuButton.addEventListener('click', openMenu);
         closeButton.addEventListener('click', closeMenu);
         overlay.addEventListener('click', closeMenu);
+
+        const videoId = "zxW1swhn-g4";
+
+        // Get elements
+        const playButton = document.getElementById('playButton');
+        const videoModal = document.getElementById('videoModal');
+        const closeModal = document.getElementById('closeModal');
+        const youtubeIframe = document.getElementById('youtubeIframe');
+
+        // Open modal and play video
+        playButton.addEventListener('click', function () {
+            youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            videoModal.style.display = 'block';
+            // Stop the button animation when the modal is open
+            playButton.style.animation = 'none';
+        });
+
+        // Close modal and stop video
+        closeModal.addEventListener('click', function () {
+            youtubeIframe.src = '';
+            videoModal.style.display = 'none';
+            // Resume the button animation
+            playButton.style.animation = 'pulse 2s infinite';
+        });
+
+        // Close modal when clicking outside the content
+        window.addEventListener('click', function (event) {
+            if (event.target == videoModal) {
+                youtubeIframe.src = '';
+                videoModal.style.display = 'none';
+                // Resume the button animation
+                playButton.style.animation = 'pulse 2s infinite';
+            }
+        });
     </script>
 </body>
 
