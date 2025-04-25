@@ -21,11 +21,16 @@
                 <header
                     class="md:h-[120px] h-[80px] md:mt-4 flex justify-between justify-center items-center max-w-[1673px] md:w-[80%] w-[90%] mx-auto">
                     <div class="hidden md:flex space-x-6 flex-1">
-                        <a href="index.html">
-                            <h2 class="text-[16px] cursor-pointer kumbh-sans text-[#ffffffde]">Home</h2>
+                        <a href="index.html" class="group relative">
+                            <span class="cursor-pointer text-white pb-1">Home</span>
+                            <span
+                                class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
                         </a>
-                        <a href="about.html">
-                            <h2 class="text-[16px] cursor-pointer kumbh-sans text-[#ffffffde]">About us</h2>
+                        <!-- <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">Home</h2> -->
+                        <a href="about.html" class="group relative">
+                            <h2 class="text-[16px] kumbh-sans cursor-pointer text-white pb-1">About us</h2>
+                            <span
+                                class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
                         </a>
                     </div>
                     <div class="md:flex-1">
@@ -95,18 +100,65 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="social-icons md:flex hidden flex flex-1">
+                    <div class="social-icons md:flex hidden flex-1">
                         <div class="cursor-pointer">
-                            <img src="./images/camera-header.svg"/>
+                            <svg id="Component_5_2" data-name="Component 5 – 2" xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 40 40" class="filler">
+                                <g id="Path" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                    <!-- <path d="M0,20A20,20,0,1,0,20,0,20,20,0,0,0,0,20Z" stroke="none" /> -->
+                                    <path
+                                        d="M 20 2 C 15.19223022460938 2 10.67209053039551 3.872379302978516 7.272228240966797 7.272228240966797 C 3.872379302978516 10.67209053039551 2 15.19223022460938 2 20 C 2 24.80776977539062 3.872379302978516 29.32791137695312 7.272228240966797 32.72776794433594 C 10.67209053039551 36.12762069702148 15.19223022460938 38 20 38 C 24.80776977539062 38 29.32791137695312 36.12762069702148 32.72776794433594 32.72776794433594 C 36.12762069702148 29.32791137695312 38 24.80776977539062 38 20 C 38 15.19223022460938 36.12762069702148 10.67209053039551 32.72776794433594 7.272228240966797 C 29.32791137695312 3.872379302978516 24.80776977539062 2 20 2 M 20 0 C 31.04528045654297 0 40 8.954719543457031 40 20 C 40 31.04528045654297 31.04528045654297 40 20 40 C 8.954719543457031 40 0 31.04528045654297 0 20 C 0 8.954719543457031 8.954719543457031 0 20 0 Z"
+                                        stroke="none" fill="rgba(255,255,255,0.87)" />
+                                </g>
+                                <path id="Union_2" data-name="Union 2"
+                                    d="M3.121,17.021A3.124,3.124,0,0,1,0,13.9V3.121A3.124,3.124,0,0,1,3.121,0H13.9a3.124,3.124,0,0,1,3.121,3.121V13.9A3.124,3.124,0,0,1,13.9,17.021ZM2.908,8.511a5.6,5.6,0,1,0,5.6-5.6A5.61,5.61,0,0,0,2.908,8.511ZM12.968,2.74a1.326,1.326,0,1,0,1.326-1.326A1.328,1.328,0,0,0,12.968,2.74ZM5.275,8.51a3.235,3.235,0,1,1,3.236,3.237A3.24,3.24,0,0,1,5.275,8.51Z"
+                                    transform="translate(11.915 11.915)" fill="rgba(255,255,255,0.87)" />
+                            </svg>
+
                         </div>
                         <div class="cursor-pointer">
-                            <img src="./images/X logo.svg"/>
+                            <svg id="Component_6_2" data-name="Component 6 – 2" xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 40 40" class="filler">
+                                <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                    <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                    <path
+                                        d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                        stroke="none" fill="rgba(255,255,255,0.87)" />
+                                </g>
+                                <path id="X_logo_2023_original"
+                                    d="M11.136,7.929,18.1,0h-1.65L10.4,6.883,5.571,0H0L7.3,10.41,0,18.723H1.65l6.386-7.27,5.1,7.27h5.571M2.246,1.219H4.78L16.45,17.565H13.914"
+                                    transform="translate(10.213 11.064)" fill="rgba(255,255,255,0.87)" />
+                            </svg>
                         </div>
                         <div class="cursor-pointer">
-                            <img src="./images/facebook-header.svg"/>
+                            <svg id="Component_7_2" data-name="Component 7 – 2" xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 40 40" class="filler">
+                                <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                    <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                    <path
+                                        d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                        stroke="none" fill="rgba(255,255,255,0.87)" />
+                                </g>
+                                <path id="Shape"
+                                    d="M6.244,10.193V20.426H2.013V10.193H0V6.6H2.013V4.27A3.968,3.968,0,0,1,6.282,0L9.417.013V3.5H7.142a.861.861,0,0,0-.9.98V6.6H9.407l-.37,3.593Z"
+                                    transform="translate(15.319 10.213)" fill="rgba(255,255,255,0.87)"
+                                    style="mix-blend-mode: normal;isolation: isolate" />
+                            </svg>
+
                         </div>
                         <div class="cursor-pointer">
-                            <img src="./images/linkedin-header.svg"/>
+                            <svg id="Component_4_2" data-name="Component 4 – 2" xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 40 40" class="filler">
+                                <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                    <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                    <path
+                                        d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                        stroke="none" fill="rgba(255,255,255,0.87)" />
+                                </g>
+                                <path id="Path_143" data-name="Path 143"
+                                    d="M132.946,142.212a.22.22,0,0,0,.028-.043v.043Zm-6.63-1.869h-4.288v12.9h4.288Zm.28-3.988a2.418,2.418,0,1,0-2.453,2.228h.028a2.237,2.237,0,0,0,2.425-2.228m15.178,9.49c0-3.961-2.116-5.8-4.937-5.8a4.263,4.263,0,0,0-3.865,2.128v-1.826h-4.286c.055,1.209,0,12.9,0,12.9h4.286v-7.2a2.929,2.929,0,0,1,.141-1.046,2.354,2.354,0,0,1,2.2-1.569c1.554,0,2.173,1.181,2.173,2.917v6.9h4.287Z"
+                                    transform="translate(-110.775 -124.683)" fill="rgba(255,255,255,0.87)" />
+                            </svg>
                         </div>
                     </div>
                     <div class="p-1 border-1 border border-white block md:hidden">
@@ -217,17 +269,20 @@
 
                 <!-- Overlay to close menu when clicking outside -->
                 <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
-                <hr class="h-px my-2 bg-gray-200 opacity-30 border-0">
+                <hr class="h-px my-2 bg-gray-200 w-4/5 mx-auto opacity-30 border-0">
                 <div>
                     <h1 class="md:text-[100px] text-[50px] text-[#8A764B] kumbh-sans text-center font-bold">ABOUT US
                     </h1>
                 </div>
-                <hr class="h-px my-2 bg-gray-200 opacity-30 border-0">
+                <hr class="h-px my-2 bg-gray-200 w-4/5 mx-auto opacity-30 border-0">
                 <div class="relative">
                     <div class="absolute top-[45%] w-full">
                         <div class="rotate-2">
                             <img src="./images/slant-1.svg" class="!min-w-full !max-w-none" />
                         </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-96 h-96 pointer-events-none"
+                        style="background: radial-gradient(circle, rgba(201, 164, 86, 0.2) 0%, transparent 70%); border-radius: 50%;">
                     </div>
                     <div
                         class="banner md:min-h-[90vh] min-h-[40vh] mt-12 items-center justify-center p-3 relative max-w-[1673px] md:w-[80%] w-[90%] mx-auto">
@@ -236,11 +291,14 @@
                             class="mx-auto object-cover md:object-conver w-full h-full min-h-[80vh] shadow-xl"
                             alt="Hero image" /> -->
 
-                            <div class="c-image-wrapper relative w-full md:min-h-[80vh] min-h-[40vh] overflow-hidden rounded-3xl">
-                                <img src="./images/About (2).png" class="mx-auto object-cover w-full h-full min-h-[80vh] hidden md:block"
-                                    alt="About image" />
-                                    <img src="./images/about (3).png" class="mx-auto object-cover w-full h-full min-h-[80vh] block md:hidden"/>
-                            </div>
+                        <div
+                            class="c-image-wrapper relative w-full md:min-h-[80vh] min-h-[40vh] overflow-hidden rounded-3xl">
+                            <img src="./images/About (2).png"
+                                class="mx-auto object-cover w-full h-full min-h-[80vh] hidden md:block"
+                                alt="About image" />
+                            <img src="./images/about (3).png"
+                                class="mx-auto object-cover w-full h-full min-h-[80vh] block md:hidden" />
+                        </div>
                         <!-- <div class="absolute inset-0 bg-black bg-opacity-30"></div> -->
                     </div>
 
@@ -250,14 +308,15 @@
         </section>
         <section class="py-16 max-w-[1673px] md:w-[80%] w-[90%] mx-auto">
             <div
-                class="flex md:justify-between justify-center space-y-4 md:space-y-0 flex-col md:flex-row items-center w-full">
+                class="flex md:justify-between justify-center space-y-4 md:space-y-0 space-x-6 flex-col md:flex-row items-center w-full">
                 <h2
-                    class="md:text-[75px] text-[45px] md:leading-[60px]  leading-none leading-none flex-1 text-center text-[#ffffffde] font-bold md:w-2/5 w-full">
+                    class="md:text-[65px] text-[45px] md:leading-[60px]  leading-none leading-none flex-1 text-center text-[#ffffffde] font-bold md:w-2/5 w-full font_family">
                     THE FUTURE
                     <br />OF AFRICAN <br /> SPORTS <br /> STARTS HERE
                 </h2>
                 <div class="space-y-8 flex-1 ">
-                    <p class="text-[#ffffffde] text-2xl text-xl text-center md:text-left text-[18px] kumbh-sans">House of Vision Sports
+                    <p class="text-[#ffffffde] text-2xl text-xl text-center md:text-left text-[18px] kumbh-sans">House
+                        of Vision Sports
                         (HOV
                         Sports) is the first sports
                         marketing and PR agency focused on African athletes and coaches. Based in the U.S., we help
@@ -266,10 +325,12 @@
                         opportunities. Our goal is to put African talent first, tell better stories, and change how
                         the world sees sports in and from Africa.</p>
                     <div class="flex items-center justify-center md:justify-start md:w-3/5">
-                        <button class="border-[#C9A456] text-[#8a764b] border py-3 px-8 rounded-[24px] font-semibold">OUR TEAM CAN
+                        <button
+                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-3 px-8 rounded-[24px] font-semibold">OUR
+                            TEAM CAN
                             HELP</button>
                         <div
-                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
+                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] hover:bg-[#C9A4561A] border flex items-center justify-center cursor-pointer">
                             <span class="material-icons text-[#C9A456]">
                                 arrow_outward
                             </span>
@@ -278,67 +339,91 @@
                 </div>
             </div>
         </section>
-        <section class="md:w-[60%] w-[90%] mx-auto md:py-10 py-5 text-[#ffffffde]">
-            <h2 class="text-center font-bold md:text-[75px] text-[40px] leading-none text-[#ffffffde]">OUR <br
-                    class="block md:hidden" /> SERVICES</h2>
-            <div class="block md:hidden py-4">
-                <p class="text-[#ffffffde] text-center kumbh-sans">We support African athletes and coaches by helping them grow
-                    their
-                    brand, connect with fans, and build something that lasts beyond their sport.</p>
+        <div class="relative">
+            <section class="md:w-[60%] w-[90%] mx-auto md:py-10 py-5 text-[#ffffffde]">
+                <h2 class="text-center font-bold md:text-[75px] text-[40px] leading-none text-[#ffffffde] font_family">
+                    OUR
+                    <br class="block md:hidden" /> SERVICES
+                </h2>
+                <div class="block md:hidden py-4">
+                    <p class="text-[#ffffffde] text-center kumbh-sans">We support African athletes and coaches by
+                        helping
+                        them grow
+                        their
+                        brand, connect with fans, and build something that lasts beyond their sport.</p>
+                </div>
+                <div class="grid grid-col-1 md:grid-cols-3 gap-12 md:py-10 py-8">
+                    <div class="space-y-4">
+                        <h2
+                            class="font-bold text-center md:text-left text-[27px] leading-none text-[#8a764b] font_family">
+                            BRAND <br class="block md:hidden" /> PARTNERSHIPS</h2>
+                        <p class="md:text-left text-center kumbh-sans">We match athletes with the right brands for
+                            sponsorships and
+                            deals</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">MARKETING
+                        </h2>
+                        <p class="md:text-left text-center kumbh-sans">We help promote athletes through social media,
+                            content, and
+                            personal branding.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2
+                            class="font-bold hidden md:block text-center md:text-left text-[27px] text-[#8a764b] leading-none font_family">
+                            PUBLIC <br class="md:block hidden" />
+                            ENGAGEMENT</h2>
+                        <h2
+                            class="font-bold text-center block md:hidden md:text-left text-[27px] text-[#8a764b] leading-none font_family">
+                            PUBLIC
+                            ENGAGEMENT</h2>
+                        <p class="md:text-left text-center kumbh-sans">We get athletes involved in events, talks, and
+                            opportunities
+                            to speak out and be seen.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">MEDIA
+                            RELATIONS</h2>
+                        <p class="md:text-left text-center kumbh-sans">We handle press and media to make sure their
+                            story is
+                            told the right way.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2
+                            class="font-bold text-center md:text-left text-[27px] text-[#8a764b] leading-none font_family">
+                            AGENT <br class="block md:hidden" /> REPRESENTATION</h2>
+                        <p class="md:text-left text-center kumbh-sans">We help manage careers—contracts, planning, and
+                            big-picture moves.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">
+                            PHILANTHROPY
+                        </h2>
+                        <p class="md:text-left text-center kumbh-sans">We support athletes in giving back and starting
+                            causes they care about.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="absolute bottom-0 right-0 w-96 h-96 pointer-events-none"
+                style="background: radial-gradient(circle, rgba(201, 164, 86, 0.2) 0%, transparent 70%); border-radius: 50%;">
             </div>
-            <div class="grid grid-col-1 md:grid-cols-3 gap-12 md:py-10 py-8">
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[30px] leading-none text-[#8a764b]">BRAND <br
-                            class="block md:hidden" /> PARTNERSHIPS</h2>
-                    <p class="md:text-left text-center kumbh-sans">We match athletes with the right brands for sponsorships and
-                        deals</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[30px] text-[#8a764b]">MARKETING</h2>
-                    <p class="md:text-left text-center kumbh-sans">We help promote athletes through social media, content, and
-                        personal branding.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2
-                        class="font-bold hidden md:block text-center md:text-left text-[30px] text-[#8a764b] leading-none">
-                        PUBLIC <br class="md:block hidden" />
-                        ENGAGEMENT</h2>
-                    <h2
-                        class="font-bold text-center block md:hidden md:text-left text-[30px] text-[#8a764b] leading-none">
-                        PUBLIC
-                        ENGAGEMENT</h2>
-                    <p class="md:text-left text-center kumbh-sans">We get athletes involved in events, talks, and opportunities
-                        to speak out and be seen.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[30px] text-[#8a764b]">MEDIA RELATIONS</h2>
-                    <p class="md:text-left text-center kumbh-sans">We handle press and media to make sure their story is told the right way.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[30px] text-[#8a764b] leading-none">AGENT <br
-                            class="block md:hidden" /> REPRESENTATION</h2>
-                    <p class="md:text-left text-center kumbh-sans">We help manage careers—contracts, planning, and big-picture moves.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[30px] text-[#8a764b]">PHILANTHROPY</h2>
-                    <p class="md:text-left text-center kumbh-sans">We support athletes in giving back and starting causes they care about.</p>
-                </div>
-            </div>
-        </section>
+        </div>
         <section class="md:py-10 md:pb-20 py-4 max-w-[1673px] md:w-[80%] w-[90%] mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div class="md:space-y-10 space-y-4 flex-1">
                     <h2
-                        class="text-[#ffffffde] text-[50px] md:text-[75px] uppercase kumbh-sans md:leading-[65px] leading-none text-center font-bold">
+                        class="text-[#ffffffde] text-[50px] md:text-[75px] uppercase md:leading-[65px] leading-none text-center font-bold font_family">
                         This
                         is Your Next <br class="hidden md:block" /> Move
                     </h2>
-                    <p class="text-center text-[#ffffffde] md:hidden block kumbh-sans md:text-2xl">Every move you make has purpose. We help
+                    <p class="text-center text-[#ffffffde] md:hidden block kumbh-sans md:text-2xl">Every move you make
+                        has purpose. We help
                         you unlock
                         opportunities, grow your potential, and build
                         your brand beyond sports.</p>
                     <div class="flex items-center flex-1 w-full md:hidden block">
-                        <button class="border-[#C9A456] md:font-semibold text-[#8a764b] border text-2xl py-3 px-8 rounded-[24px]">HOW
+                        <button
+                            class="border-[#C9A456] md:font-semibold text-[#8a764b] border text-2xl py-3 px-8 rounded-[24px]">HOW
                             WE
                             SUPPORT</button>
                         <div
@@ -365,9 +450,8 @@
                             <div
                                 class="h-[70px] w-[70px] bg-[#FFFFFF14] relative rounded-md flex justify-center items-center">
                                 <div class="c-absolute-middle">
-                                    <svg class="w-[100px]"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 214.601 90.001">
+                                    <svg class="w-[100px]" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
                                         <g id="Group_157" data-name="Group 157" transform="translate(0)">
                                             <path id="Path_89" data-name="Path 89"
                                                 d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
@@ -376,17 +460,17 @@
                                         </g>
                                     </svg>
                                 </div>
-                                
+
                             </div>
-                            <div class="text-[#8a764b] text-2xl w-4/5 kumbh-sans">Dream Big and Reach for the stars</div>
+                            <div class="text-[#8a764b] text-2xl w-4/5 kumbh-sans">Dream Big and Reach for the stars
+                            </div>
                         </div>
                         <div class="flex space-x-8  items-center w-full">
                             <div
                                 class="h-[70px] w-[70px] bg-[#FFFFFF14] relative rounded-md flex justify-center items-center">
                                 <div class="c-absolute-middle">
-                                    <svg class="w-[100px]"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 214.601 90.001">
+                                    <svg class="w-[100px]" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
                                         <g id="Group_157" data-name="Group 157" transform="translate(0)">
                                             <path id="Path_89" data-name="Path 89"
                                                 d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
@@ -396,7 +480,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="text-[#8a764b] text-2xl w-4/5 kumbh-sans">Turn your vision into a reality, starting
+                            <div class="text-[#8a764b] text-2xl w-4/5 kumbh-sans">Turn your vision into a reality,
+                                starting
                                 now…
                             </div>
                         </div>
@@ -404,9 +489,8 @@
                             <div
                                 class="h-[70px] w-[70px] bg-[#FFFFFF14] relative rounded-md flex justify-center items-center">
                                 <div class="c-absolute-middle">
-                                    <svg class="w-[100px]"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 214.601 90.001">
+                                    <svg class="w-[100px]" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
                                         <g id="Group_157" data-name="Group 157" transform="translate(0)">
                                             <path id="Path_89" data-name="Path 89"
                                                 d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
@@ -416,7 +500,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="text-[#8a764b] kumbh-sans text-2xl w-4/5">Get in touch and start your journey with HOV
+                            <div class="text-[#8a764b] kumbh-sans text-2xl w-4/5">Get in touch and start your journey
+                                with HOV
                             </div>
                         </div>
                     </div>
@@ -430,11 +515,13 @@
                         opportunities, grow your potential, and build
                         your brand beyond sports.</p>
                     <div class="md:flex items-center justify-center flex-1 w-full hidden">
-                        <button class="border-[#C9A456] text-[#8a764b] border font-semibold py-3 px-8 rounded-[24px]">HOW WE
+                        <button
+                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border font-semibold py-3 px-8 rounded-[24px]">HOW
+                            WE
                             SUPPORT</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                            <span class="material-icons text-[#C9A456]">
+                            <span class="material-icons text-[#C9A456] hover:bg-[#C9A4561A]">
                                 arrow_outward
                             </span>
                         </div>
@@ -443,9 +530,8 @@
                         <div class="flex space-x-5 items-center w-full">
                             <div class="h-[50px] w-[50px] bg-[#32302d] rounded-sm relative w-1/5">
                                 <div class="c-absolute-middle">
-                                    <svg class="w-[70px]"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 214.601 90.001">
+                                    <svg class="w-[70px]" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
                                         <g id="Group_157" data-name="Group 157" transform="translate(0)">
                                             <path id="Path_89" data-name="Path 89"
                                                 d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
@@ -460,9 +546,8 @@
                         <div class="flex space-x-6 items-center w-full">
                             <div class="h-[50px] w-[50px] bg-[#32302d] rounded-sm relative w-1/5">
                                 <div class="c-absolute-middle">
-                                    <svg class="w-[70px]"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 214.601 90.001">
+                                    <svg class="w-[70px]" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
                                         <g id="Group_157" data-name="Group 157" transform="translate(0)">
                                             <path id="Path_89" data-name="Path 89"
                                                 d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
@@ -472,15 +557,15 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="text-[#8a764b] text-lg leading-6 w-4/5">Turn your vision into a reality, starting now…
+                            <div class="text-[#8a764b] text-lg leading-6 w-4/5">Turn your vision into a reality,
+                                starting now…
                             </div>
                         </div>
                         <div class="flex space-x-6 items-center">
                             <div class="h-[50px] w-[50px] bg-[#32302d] rounded-sm relative w-1/5">
                                 <div class="c-absolute-middle">
-                                    <svg class="w-[70px]"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 214.601 90.001">
+                                    <svg class="w-[70px]" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 214.601 90.001">
                                         <g id="Group_157" data-name="Group 157" transform="translate(0)">
                                             <path id="Path_89" data-name="Path 89"
                                                 d="M32.67.034V1.524h-.007V20.254L23.6,24.177V1.5h-.021V.048L0,0,.055,65.141,28.279,89.235l29.23-24.094V0L32.663.034ZM20.627,3.026V25.473L3.013,33.1,2.985,2.992l17.642.041ZM3.013,36.352,35.642,22.219V3.013l18.889-.028V32.236L35.642,41.2v-.021L20.62,48.478v30.3L3.033,63.769,3.006,36.352ZM23.6,81.321V50.346l9.059-4.4V81.762L28.32,85.34,23.6,81.321ZM35.642,79.3V44.5l18.889-8.969v28.2L35.642,79.294Z"
@@ -490,7 +575,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="text-[#8a764b] text-lg leading-6 w-4/5">Get in touch and start your journey with HOV
+                            <div class="text-[#8a764b] text-lg leading-6 w-4/5">Get in touch and start your journey with
+                                HOV
                             </div>
                         </div>
                     </div>
@@ -555,12 +641,13 @@
             <section class="md:py-24 py-5 max-w-[1673px] md:w-[80%] w-[90%] mx-auto">
                 <div class="kumbh-sans">
                     <h2
-                        class="text-[50px] md:text-[75px] md:ml-[100px] text-center md:text-left text-[#ffffffde] font-bold">
+                        class="text-[50px] md:text-[75px] md:ml-[100px] text-center md:text-left text-[#ffffffde] font-bold font_family">
                         LEADERSHIP
                     </h2>
                     <div class="mt-8 flex flex-col md:flex-row justify-between gap-4">
                         <div class="md:mt-20 w-full">
-                            <img src="./images/cofounder-ball.png" class="h-auto object-contain w-full object-contain rounded-[24px]" />
+                            <img src="./images/cofounder-ball.png"
+                                class="h-auto object-contain w-full object-contain rounded-[24px]" />
                             <div
                                 class="flex flex-col md:justify-center py-2 md:items-center justify-start items-start text-[#ffffffde]">
                                 <h2 class="text-lg md:text-2xl">Seun Lloyd</h2>
@@ -571,7 +658,8 @@
                             </div>
                         </div>
                         <div class="md:mt-[150px] w-full">
-                            <img src="./images/cofounder-main.png" class="h-auto object-contain w-full rounded-[24px]" />
+                            <img src="./images/cofounder-main.png"
+                                class="h-auto object-contain w-full rounded-[24px]" />
                             <div
                                 class="flex flex-col md:justify-center py-2 md:items-center justify-start items-start text-[#ffffffde]">
                                 <h2 class="text-lg md:text-2xl">Koye Sowemimo</h2>
@@ -581,7 +669,7 @@
                                 </div>
                                 <div class="flex items-center py-4 flex-1 w-[100%]">
                                     <button
-                                        class="border-[#C9A456] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
+                                        class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
                                     <div
                                         class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
                                         <span class="material-icons text-[#C9A456]">
@@ -592,7 +680,8 @@
                             </div>
                         </div>
                         <div class="w-full">
-                            <img src="./images/cofounder-brown.png" class="h-auto w-full object-contain rounded-[24px]" />
+                            <img src="./images/cofounder-brown.png"
+                                class="h-auto w-full object-contain rounded-[24px]" />
                             <div
                                 class="flex flex-col md:justify-center py-2 md:items-center justify-start items-start text-[#ffffffde]">
                                 <h2 class="text-lg md:text-2xl">Tara P. Enahoro</h2>
@@ -604,7 +693,8 @@
                             </div>
                         </div>
                         <div class="md:mt-[150px] w-full">
-                            <img src="./images/cofounder-green.png" class="h-auto  w-full object-contain rounded-[24px]" />
+                            <img src="./images/cofounder-green.png"
+                                class="h-auto  w-full object-contain rounded-[24px]" />
                             <div
                                 class="flex flex-col md:justify-center py-2 md:items-center justify-start items-start text-[#ffffffde]">
                                 <h2 class="text-lg md:text-2xl">Krystal Chigbu Maka</h2>
@@ -615,17 +705,17 @@
                                 <div class="space-y-1 w-[100%]">
                                     <div class="flex items-center py-2 flex-1 ">
                                         <button
-                                            class="border-[#C9A456] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
+                                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
                                         <div
                                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                                            <span class="material-icons text-[#C9A456]">
+                                            <span class="material-icons hover:bg-[#C9A4561A] text-[#C9A456]">
                                                 photo_camera
                                             </span>
                                         </div>
                                     </div>
                                     <div class="flex items-center flex-1 w-[100%]">
                                         <button
-                                            class="border-[#C9A456] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">X</button>
+                                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">X</button>
                                         <div
                                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
                                             <i class="fab fa-twitter text-[#C9A456]"></i>
@@ -724,11 +814,11 @@
                             <div class="social-iconn linkedin">
                                 <img src="./images/twitter-footer.svg" />
                             </div>
-                          
+
                             <div class="social-iconn">
                                 <img src="./images/facebook-footer.svg" />
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -766,7 +856,18 @@
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm"><a href="./privacy.html">Privacy Notice</a> | <a href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a></p>
+                    <div class="flex space-x-2 items-center">
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./privacy.html">Privacy Notice |
+                            </a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./cookie.html">Cookie notice |</a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./terms.html">| Terms and Conditions</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="py-3 space-y-2 block md:hidden text-white">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>

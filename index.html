@@ -26,9 +26,16 @@
             <header
                 class="md:h-[120px] h-[80px] md:mt-4 flex justify-between justify-center items-center max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
                 <div class="hidden md:flex space-x-6 flex-1">
-                    <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">Home</h2>
-                    <a href="about.html">
-                        <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">About us</h2>
+                    <a href="home.html" class="group relative">
+                        <span class="cursor-pointer text-white pb-1">Home</span>
+                        <span
+                            class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <!-- <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">Home</h2> -->
+                    <a href="about.html" class="group relative">
+                        <h2 class="text-[16px] kumbh-sans cursor-pointer text-white pb-1">About us</h2>
+                        <span
+                            class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </div>
                 <div class="md:flex-1">
@@ -100,16 +107,63 @@
                 </div>
                 <div class="social-icons md:flex hidden flex-1">
                     <div class="cursor-pointer">
-                        <img src="./images/camera-header.svg" />
+                        <svg id="Component_5_2" data-name="Component 5 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Path" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M0,20A20,20,0,1,0,20,0,20,20,0,0,0,0,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19223022460938 2 10.67209053039551 3.872379302978516 7.272228240966797 7.272228240966797 C 3.872379302978516 10.67209053039551 2 15.19223022460938 2 20 C 2 24.80776977539062 3.872379302978516 29.32791137695312 7.272228240966797 32.72776794433594 C 10.67209053039551 36.12762069702148 15.19223022460938 38 20 38 C 24.80776977539062 38 29.32791137695312 36.12762069702148 32.72776794433594 32.72776794433594 C 36.12762069702148 29.32791137695312 38 24.80776977539062 38 20 C 38 15.19223022460938 36.12762069702148 10.67209053039551 32.72776794433594 7.272228240966797 C 29.32791137695312 3.872379302978516 24.80776977539062 2 20 2 M 20 0 C 31.04528045654297 0 40 8.954719543457031 40 20 C 40 31.04528045654297 31.04528045654297 40 20 40 C 8.954719543457031 40 0 31.04528045654297 0 20 C 0 8.954719543457031 8.954719543457031 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="Union_2" data-name="Union 2"
+                                d="M3.121,17.021A3.124,3.124,0,0,1,0,13.9V3.121A3.124,3.124,0,0,1,3.121,0H13.9a3.124,3.124,0,0,1,3.121,3.121V13.9A3.124,3.124,0,0,1,13.9,17.021ZM2.908,8.511a5.6,5.6,0,1,0,5.6-5.6A5.61,5.61,0,0,0,2.908,8.511ZM12.968,2.74a1.326,1.326,0,1,0,1.326-1.326A1.328,1.328,0,0,0,12.968,2.74ZM5.275,8.51a3.235,3.235,0,1,1,3.236,3.237A3.24,3.24,0,0,1,5.275,8.51Z"
+                                transform="translate(11.915 11.915)" fill="rgba(255,255,255,0.87)" />
+                        </svg>
+
                     </div>
                     <div class="cursor-pointer">
-                        <img src="./images/X logo.svg" />
+                        <svg id="Component_6_2" data-name="Component 6 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="X_logo_2023_original"
+                                d="M11.136,7.929,18.1,0h-1.65L10.4,6.883,5.571,0H0L7.3,10.41,0,18.723H1.65l6.386-7.27,5.1,7.27h5.571M2.246,1.219H4.78L16.45,17.565H13.914"
+                                transform="translate(10.213 11.064)" fill="rgba(255,255,255,0.87)" />
+                        </svg>
                     </div>
                     <div class="cursor-pointer">
-                        <img src="./images/facebook-header.svg" />
+                        <svg id="Component_7_2" data-name="Component 7 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="Shape"
+                                d="M6.244,10.193V20.426H2.013V10.193H0V6.6H2.013V4.27A3.968,3.968,0,0,1,6.282,0L9.417.013V3.5H7.142a.861.861,0,0,0-.9.98V6.6H9.407l-.37,3.593Z"
+                                transform="translate(15.319 10.213)" fill="rgba(255,255,255,0.87)"
+                                style="mix-blend-mode: normal;isolation: isolate" />
+                        </svg>
+
                     </div>
                     <div class="cursor-pointer">
-                        <img src="./images/linkedin-header.svg" />
+                        <svg id="Component_4_2" data-name="Component 4 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="Path_143" data-name="Path 143"
+                                d="M132.946,142.212a.22.22,0,0,0,.028-.043v.043Zm-6.63-1.869h-4.288v12.9h4.288Zm.28-3.988a2.418,2.418,0,1,0-2.453,2.228h.028a2.237,2.237,0,0,0,2.425-2.228m15.178,9.49c0-3.961-2.116-5.8-4.937-5.8a4.263,4.263,0,0,0-3.865,2.128v-1.826h-4.286c.055,1.209,0,12.9,0,12.9h4.286v-7.2a2.929,2.929,0,0,1,.141-1.046,2.354,2.354,0,0,1,2.2-1.569c1.554,0,2.173,1.181,2.173,2.917v6.9h4.287Z"
+                                transform="translate(-110.775 -124.683)" fill="rgba(255,255,255,0.87)" />
+                        </svg>
                     </div>
                 </div>
                 <div class="p-1 border-1 border border-white block md:hidden">
@@ -203,7 +257,8 @@
 
                 <!-- Menu items -->
                 <nav class="mt-4 text-[#ffffffde] flex flex-col min-h-[85vh]">
-                    <a href="/" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">Home</a>
+                    <a href="/"
+                        class="block group relative py-3 px-6 hover:bg-gray-700 text-xl transition-colors">Home</a>
                     <a href="/about.html" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">About
                         Us</a>
                     <div class="border-b border-gray-700 mt-4"></div>
@@ -219,20 +274,24 @@
             <!-- Overlay to close menu when clicking outside -->
             <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
             <!-- <hr class="h-px my-2 bg-gray-200 opacity-30 border-0"> -->
-            <div class="relative">
+            <div class="relative ">
                 <div class="absolute top-[45%] w-full">
                     <div class="rotate-2">
                         <img src="./images/slant-1.svg" class="!min-w-full !max-w-none" />
                     </div>
 
                 </div>
-                <section class="py-2 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
+                <div class="absolute bottom-[4rem] left-[-7rem] w-96 h-96 pointer-events-none"
+                    style="background: radial-gradient(circle, rgba(201, 164, 86, 0.2) 0%, transparent 70%); border-radius: 50%;">
+                </div>
+                <section class="py-2 max-w-[1673px] w-[90%] md:w-[80%] mx-auto ">
                     <!-- <div class="absolute h-[10] min-w-[100vw] -rotate-2 border-y py-6 border-[#C9A456]">
     
                     </div> -->
                     <div class="min-h-[80vh] banner items-center justify-center p-3 relative">
                         <div class="c-out-house md:left-[4%] md:top-[7%] left-8 top-8 absolute">
-                            <h2 class="leading-none font-bold text-white md:text-[40px] text-[25px] hob">OUT HOUSE
+                            <h2 class="leading-none font-bold text-white md:text-[30px] text-[25px] hob font_family">OUT
+                                HOUSE
                                 <br /> IS
                                 BUILT<br />
                                 ON <br />
@@ -281,7 +340,6 @@
                     </div>
                 </section>
             </div>
-
             <div id="videoModal" class="modal">
                 <div class="modal-content">
                     <span class="close-button" id="closeModal">&times;</span>
@@ -294,52 +352,60 @@
                     </div>
                 </div>
             </div>
-
-            <section
-                class="md:py-[100px] py-10 flex md:flex-row flex-col items-center w-full justify-betweeen md:space-x-5 max-w-[1673px] w-[90%] md:w-[80%] mx-auto space-y-8 md:space-y-0">
-                <div class="space-y-6 flex flex-col justify-center items-center md:w-1/3 w-[90%] mx-auto">
-                    <h2 class="text-[45px] text-[#ffffffde] font-bold text-center leading-none">AFRICA <br /> REPPING
-                        <br />
-                        AFRICA
-                    </h2>
-                    <p class="text-center text-[#ffffffde]  text-xl kumbh-sans">Founded in 2024 by a group of
-                        experienced
-                        international
-                        executives from
-                        Nigeria, we’re a leading agency for African sports, culture, and entertainment, with a goal to
-                        represent African athletes and nurture their success on and off the field.</p>
-                    <div class="flex items-center flex-1">
-                        <button
-                            class="border-[#C9A456] text-[#8A764B] border py-3 px-8 rounded-[24px] kumbh-sans font-semibold">OUR
-                            TEAM CAN
-                            HELP</button>
-                        <div
-                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                            <span class="material-icons text-[#C9A456]">
-                                arrow_outward
-                            </span>
+            <div class="relative">
+                <section
+                    class="md:py-[100px] py-10 flex md:flex-row flex-col items-center w-full justify-betweeen md:space-x-5 max-w-[1673px] w-[90%] md:w-[80%] mx-auto space-y-8 md:space-y-0">
+                    <div class="space-y-6 flex flex-col justify-center items-center md:w-1/3 w-[90%] mx-auto">
+                        <h2 class="text-[45px] text-[#ffffffde] font_family font-bold text-center leading-none">AFRICA
+                            <br /> REPPING
+                            <br />
+                            AFRICA
+                        </h2>
+                        <p class="text-center text-[#ffffffde]  text-xl kumbh-sans">Founded in 2024 by a group of
+                            experienced
+                            international
+                            executives from
+                            Nigeria, we’re a leading agency for African sports, culture, and entertainment, with a goal
+                            to
+                            represent African athletes and nurture their success on and off the field.</p>
+                        <div class="flex items-center flex-1">
+                            <button
+                                class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8A764B] border py-3 px-8 rounded-[24px] kumbh-sans font-semibold shadow hover:shadow-md transition-all duration-300 ease-in-out hover:-translate-y-0.5">OUR
+                                TEAM CAN
+                                HELP</button>
+                            <div
+                                class="p-6 rounded-full h-10 w-10 border-[#C9A456] hover:bg-[#C9A45626] border flex items-center justify-center cursor-pointer">
+                                <span class="material-icons text-[#C9A456]">
+                                    arrow_outward
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="md:w-1/2 w-4/5 mx-auto">
-                    <img src="./images/IMAGE(1).png" class="md:h-[600px] h-auto w-full rounded-[24px] object-contain" />
+                    <div class="md:w-1/2 w-4/5 mx-auto">
+                        <img src="./images/IMAGE(1).png"
+                            class="md:h-[600px] h-auto w-full rounded-[24px] object-contain shadow-2xl" />
 
-                    <!-- <div class="c-image-wrapper-2 relative overflow-hidden rounded-2xl">
+                        <!-- <div class="c-image-wrapper-2 relative overflow-hidden rounded-2xl">
                         <img src="./images/IMAGE(1).png" class="mx-auto object-contain w-full"
                             alt="Image 1" />
                     </div> -->
-                </div>
-                <div class="md:w-1/3 w-4/5 mx-auto">
-                    <img src="./images/Sanwo olu.png"
-                        class="h-[250px] object-cover md:object-contain rounded-[24px] w-[100%]" />
+                    </div>
+                    <div class="md:w-1/3 w-4/5 mx-auto">
+                        <img src="./images/Sanwo olu.png"
+                            class="h-[250px] object-cover md:object-contain rounded-[24px] w-[100%] shadow-2xl" />
 
-                    <!-- <div class="c-image-wrapper-2 relative overflow-hidden rounded-2xl">
+                        <!-- <div class="c-image-wrapper-2 relative overflow-hidden rounded-2xl">
                         <img src="./images/Sanwo olu.png" class="object-cover md:object-contain h-[250px] w-[100%]"
                             alt="Image sanwo Olu" />
                     </div> -->
+                    </div>
+                </section>
+                <div class="absolute bottom-0 left-0 w-96 h-96 pointer-events-none c-fade-gold" 
+                    style="background: radial-gradient(circle, rgba(201, 164, 86, 0.2) 0%, transparent 70%); border-radius: 50%;">
                 </div>
-            </section>
+            </div>
+
             <div class="md:py-24">
                 <div class="-rotate-3">
                     <img src="./images/House Of Vision.svg" class="!min-w-full !max-w-none" />
@@ -348,7 +414,7 @@
             <section
                 class="py-10 flex flex-col md:flex-row w-full md:gap-8 gap-12 justify-between items-end max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
                 <div class="md:w-1/4 w-4/5 mx-auto md:space-y-8 space-y-4 md:mb-[-100px]">
-                    <img src="./images/basketball girl.png" />
+                    <img src="./images/basketball girl.png" class="shadow-2xl" />
                     <p class="text-[#ffffffde] text-xl kumbh-sans">You could be one of the <br />success stories.</p>
                     <div class="flex space-x-2 items-center">
                         <p class="text-[#ffffffde] cursor-pointer kumbh-sans">Get in touch</p> &nbsp;
@@ -358,7 +424,9 @@
                     </div>
                 </div>
                 <div class="md:w-1/3 w-[90%] mx-auto md:space-y-12 space-y-8 flex flex-col justify-center items-center">
-                    <h2 class="md:text-[65px] text-[50px] font-bold text-center leading-none text-[#ffffffde]">MOVE WITH
+                    <h2
+                        class="md:text-[50px] text-[40px] font-bold text-center leading-none text-[#ffffffde] font_family">
+                        MOVE WITH
                         <br /> VISION,
                         PLAN
                         WITH <br />
@@ -371,10 +439,10 @@
                         the very spirit and excellence of the continent.</p>
                     <div class="flex items-center">
                         <button
-                            class="border-[#C9A456] text-[#8A764B] font-semibold border py-3 px-12 rounded-[24px]">START
+                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8A764B] font-semibold border py-3 px-12 rounded-[24px]">START
                             TODAY</button>
                         <div
-                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
+                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] hover:bg-[#C9A4561A] border flex items-center justify-center cursor-pointer">
                             <span class="material-icons text-[#C9A456]">
                                 arrow_outward
                             </span>
@@ -412,32 +480,37 @@
                 </section>
 
             </div>
-            <section class="py-10 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
-                <div class="flex flex-col justify-center items-center md:space-y-8 space-y-4">
-                    <h2
-                        class="md:text-[70px] text-[60px] leading-[50px] text-white font-bold md:leading-none text-center uppercase">
-                        Level Up <br />Your
-                        Legacy</h2>
-                    <p class="text-center text-white text-xl md:w-3/5 mx-auto kumbh-sans">We are the bridge between
-                        where your
-                        career is
-                        now
-                        and where it
-                        can go. Our goal is to ensure that when you look back, you see every move was the right one.
-                        Play, compete, and become your best—that’s the vision.</p>
-                    <div class="flex items-center flex-1">
-                        <button
-                            class="border-[#C9A456] text-[#8a764b] font-semibold border py-3 px-8 rounded-[24px]">LEARN
-                            MORE</button>
-                        <div
-                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                            <span class="material-icons text-[#C9A456]">
-                                arrow_outward
-                            </span>
+            <div class="relative">
+                <section class="py-10 max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
+                    <div class="flex flex-col justify-center items-center md:space-y-8 space-y-4">
+                        <h2
+                            class="md:text-[70px] text-[40px] font_family leading-[50px] text-white font-bold md:leading-none text-center uppercase">
+                            Level Up <br />Your
+                            Legacy</h2>
+                        <p class="text-center text-white text-xl md:w-3/5 mx-auto kumbh-sans">We are the bridge between
+                            where your
+                            career is
+                            now
+                            and where it
+                            can go. Our goal is to ensure that when you look back, you see every move was the right one.
+                            Play, compete, and become your best—that’s the vision.</p>
+                        <div class="flex items-center flex-1">
+                            <button
+                                class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] font-semibold border py-3 px-8 rounded-[24px]">LEARN
+                                MORE</button>
+                            <div
+                                class="p-6 rounded-full h-10 w-10 border-[#C9A456] hover:bg-[#C9A4561A] border flex items-center justify-center cursor-pointer">
+                                <span class="material-icons text-[#C9A456]">
+                                    arrow_outward
+                                </span>
+                            </div>
                         </div>
                     </div>
+                </section>
+                <div class="absolute top-0 left-0 w-96 h-96 pointer-events-none"
+                    style="background: radial-gradient(circle, rgba(201, 164, 86, 0.2) 0%, transparent 70%); border-radius: 50%;">
                 </div>
-            </section>
+            </div>
             <div class="relative">
                 <div class="absolute top-[45%] w-full">
                     <div class="rotate-3">
@@ -463,7 +536,6 @@
         </div>
         <footer class="py-10 bg-black">
             <div class="md:w-4/5 w-[90%] mx-auto">
-
                 <div class="flex space-y-3 flex-col md:flex-row justify-between items-start">
                     <!-- <img src="./images/logo-image.svg" class="cursor-pointer md:h-[170px] object-contain"> -->
                     <div class="md:h-[170px]">
@@ -587,10 +659,23 @@
                 </div>
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
-                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./privacy.html">Privacy Notice</a> |
-                        <a href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">@2025 House of Vision
                     </p>
+                    <div class="flex space-x-2 items-center">
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./privacy.html">Privacy Notice |
+                            </a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./cookie.html">Cookie notice |</a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./terms.html">| Terms and Conditions</a>
+                        </p>
+                    </div>
+                    <!-- <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./privacy.html">Privacy Notice</a> |
+                        <a href="./cookie.html" class="hover:text-[#C9A456]">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a>
+                    </p> -->
                 </div>
                 <div class="py-3 space-y-2 block md:hidden text-white">
                     <p class="text-[#ffffffde] text-sm kumbh-sans">@2025 House of Vision Limited</p>

@@ -1,10 +1,22 @@
+@font-face {
+    font-family: 'Stinger Wide Bold';
+    src: url('Stinger\ Wide\ Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font_family{
+    font-family: 'Stinger Wide Bold', Arial, sans-serif;
+}
+
 .social-icons {
     display: flex;
     gap: 10px;
     justify-content: end;
 }
 
-.social-iconn{
+.social-iconn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -45,7 +57,7 @@ text {
     transform: none;
     text-rendering: optimizeLegibility;
 
-  }
+}
 
 .social-icon.twitter:hover {
     color: #C9A456;
@@ -100,13 +112,22 @@ main {
     margin-right: -50vw;
 }
 
+/* .svg-one path{
+    fill:white
+} */
+
 .my-svg path {
     fill: #8a764b;
-  }
-  /* Change fill to white on hover */
-  .my-svg:hover path {
+}
+
+.filler:hover path{
+    fill: #C9A456;
+}
+
+/* Change fill to white on hover */
+.my-svg:hover path {
     fill: #FFFFFF;
-  }
+}
 
 .image-container {
     position: relative;
@@ -136,30 +157,32 @@ main {
 
 @media (max-width: 640px) {
     .social-icon {
-      display: none;
+        display: none;
     }
-  }
+}
 
 
 
-.c-out-house{
+.c-out-house {
     z-index: 2;
 }
 
-.c-get-in-touch{
+.c-get-in-touch {
     letter-spacing: .17rem;
     font-weight: 200;
 }
 
-.c-image-wrapper{          /* Clip the overlay & image */
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7); /* "Lifted" shadow */
+.c-image-wrapper {
+    /* Clip the overlay & image */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+    /* "Lifted" shadow */
 }
 
 .c-image-wrapper-2 {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
 }
 
-.c-absolute-middle{
+.c-absolute-middle {
     position: absolute;
     left: 50%;
     top: 50%;

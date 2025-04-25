@@ -23,11 +23,16 @@
         <header class="md:h-[120px] bg-black shadow-none h-[80px] flex">
             <div class="w-[85%] mx-auto flex justify-between justify-center items-center">
                 <div class="hidden md:flex space-x-6 flex-1">
-                    <a href="index.html">
-                        <h2 class="text-[16px] cursor-pointer text-white">Home</h2>
+                    <a href="index.html" class="group relative">
+                        <span class="cursor-pointer text-white pb-1">Home</span>
+                        <span
+                            class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="about.html">
-                        <h2 class="text-[16px] cursor-pointer text-white">About us</h2>
+                    <!-- <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">Home</h2> -->
+                    <a href="about.html" class="group relative">
+                        <h2 class="text-[16px] kumbh-sans cursor-pointer text-white pb-1">About us</h2>
+                        <span
+                            class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </div>
                 <div class="md:flex-1">
@@ -99,16 +104,63 @@
                 </div>
                 <div class="social-icons md:flex hidden flex-1">
                     <div class="cursor-pointer">
-                        <img src="./images/camera-header.svg" />
+                        <svg id="Component_5_2" data-name="Component 5 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Path" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M0,20A20,20,0,1,0,20,0,20,20,0,0,0,0,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19223022460938 2 10.67209053039551 3.872379302978516 7.272228240966797 7.272228240966797 C 3.872379302978516 10.67209053039551 2 15.19223022460938 2 20 C 2 24.80776977539062 3.872379302978516 29.32791137695312 7.272228240966797 32.72776794433594 C 10.67209053039551 36.12762069702148 15.19223022460938 38 20 38 C 24.80776977539062 38 29.32791137695312 36.12762069702148 32.72776794433594 32.72776794433594 C 36.12762069702148 29.32791137695312 38 24.80776977539062 38 20 C 38 15.19223022460938 36.12762069702148 10.67209053039551 32.72776794433594 7.272228240966797 C 29.32791137695312 3.872379302978516 24.80776977539062 2 20 2 M 20 0 C 31.04528045654297 0 40 8.954719543457031 40 20 C 40 31.04528045654297 31.04528045654297 40 20 40 C 8.954719543457031 40 0 31.04528045654297 0 20 C 0 8.954719543457031 8.954719543457031 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="Union_2" data-name="Union 2"
+                                d="M3.121,17.021A3.124,3.124,0,0,1,0,13.9V3.121A3.124,3.124,0,0,1,3.121,0H13.9a3.124,3.124,0,0,1,3.121,3.121V13.9A3.124,3.124,0,0,1,13.9,17.021ZM2.908,8.511a5.6,5.6,0,1,0,5.6-5.6A5.61,5.61,0,0,0,2.908,8.511ZM12.968,2.74a1.326,1.326,0,1,0,1.326-1.326A1.328,1.328,0,0,0,12.968,2.74ZM5.275,8.51a3.235,3.235,0,1,1,3.236,3.237A3.24,3.24,0,0,1,5.275,8.51Z"
+                                transform="translate(11.915 11.915)" fill="rgba(255,255,255,0.87)" />
+                        </svg>
+
                     </div>
                     <div class="cursor-pointer">
-                        <img src="./images/X logo.svg" />
+                        <svg id="Component_6_2" data-name="Component 6 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="X_logo_2023_original"
+                                d="M11.136,7.929,18.1,0h-1.65L10.4,6.883,5.571,0H0L7.3,10.41,0,18.723H1.65l6.386-7.27,5.1,7.27h5.571M2.246,1.219H4.78L16.45,17.565H13.914"
+                                transform="translate(10.213 11.064)" fill="rgba(255,255,255,0.87)" />
+                        </svg>
                     </div>
                     <div class="cursor-pointer">
-                        <img src="./images/facebook-header.svg" />
+                        <svg id="Component_7_2" data-name="Component 7 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="Shape"
+                                d="M6.244,10.193V20.426H2.013V10.193H0V6.6H2.013V4.27A3.968,3.968,0,0,1,6.282,0L9.417.013V3.5H7.142a.861.861,0,0,0-.9.98V6.6H9.407l-.37,3.593Z"
+                                transform="translate(15.319 10.213)" fill="rgba(255,255,255,0.87)"
+                                style="mix-blend-mode: normal;isolation: isolate" />
+                        </svg>
+
                     </div>
                     <div class="cursor-pointer">
-                        <img src="./images/linkedin-header.svg" />
+                        <svg id="Component_4_2" data-name="Component 4 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
+                            </g>
+                            <path id="Path_143" data-name="Path 143"
+                                d="M132.946,142.212a.22.22,0,0,0,.028-.043v.043Zm-6.63-1.869h-4.288v12.9h4.288Zm.28-3.988a2.418,2.418,0,1,0-2.453,2.228h.028a2.237,2.237,0,0,0,2.425-2.228m15.178,9.49c0-3.961-2.116-5.8-4.937-5.8a4.263,4.263,0,0,0-3.865,2.128v-1.826h-4.286c.055,1.209,0,12.9,0,12.9h4.286v-7.2a2.929,2.929,0,0,1,.141-1.046,2.354,2.354,0,0,1,2.2-1.569c1.554,0,2.173,1.181,2.173,2.917v6.9h4.287Z"
+                                transform="translate(-110.775 -124.683)" fill="rgba(255,255,255,0.87)" />
+                        </svg>
                     </div>
                 </div>
                 <!-- <div class="social-icons flex-1">
@@ -173,8 +225,8 @@
         <!-- Overlay to close menu when clicking outside -->
         <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
         <div class="md:py-20 py-12 md:w-[75%] w-[90%] mx-auto">
-            <h2 class="md:text-[120px] text-[40px] leading-none font-bold text-center">Cookie <br
-                    class="block md:hidden" /> Notice</h2>
+            <h2 class="md:text-[120px] text-[40px] leading-none font-bold text-center font_family">Cookie <br
+                    class="block md:hidden font_family" /> Notice</h2>
             <div class="py-8 kumbh-sans text-[#000000DE]">
                 <div class="py-2 space-y-3">
                     <h2 class="text-lg font-semibold">Effective Date: May 20, 2019</h2>
@@ -286,11 +338,11 @@
                             <div class="social-iconn linkedin">
                                 <img src="./images/twitter-footer.svg" />
                             </div>
-                          
+
                             <div class="social-iconn">
                                 <img src="./images/facebook-footer.svg" />
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -328,8 +380,18 @@
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm"><a href="./privacy.html">Privacy Notice</a> | <a
-                            href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a></p>
+                    <div class="flex space-x-2 items-center">
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./privacy.html">Privacy Notice |
+                            </a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./cookie.html">Cookie notice |</a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./terms.html">| Terms and Conditions</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="py-3 space-y-2 block md:hidden text-white">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
