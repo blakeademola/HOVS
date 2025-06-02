@@ -251,3 +251,11 @@ main {
 .c-fade-gold-right{
     right: -10rem !important;
 }
+
+.my-svg3:hover path.p1{
+    fill: rgba(167,137,73,0.12);
+}
+
+.my-svg3:hover path.p2{
+    fill: rgba(167, 137, 73, 0.87);
+}
