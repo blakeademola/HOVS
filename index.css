@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Stinger Wide Bold';
+    src: url('Stinger\ Wide\ Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font_family{
+    font-family: 'Stinger Wide Bold', Arial, sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.social-iconn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1D1D1D;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for each icon */
+.social-icon.facebook:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+text {
+    text-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    filter: none;
+    transform: none;
+    text-rendering: optimizeLegibility;
+
+}
+
+.social-icon.twitter:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.social-icon.instagram:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.social-icon.linkedin:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.social-icon.youtube:hover {
+    color: #C9A456;
+    border-color: #C9A456;
+}
+
+.banner {
+    /* UI Properties */
+    background: transparent conic-gradient(from 181deg at 50% 50%, #8A764B 0.00%, #C9A456 100.00%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+    z-index: 20;
+}
+
+.banner img {
+    border-radius: 24px;
+}
+
+.hob {
+    width: 30rem;
+}
+
+main {
+    background-color: #171616;
+    opacity: 1;
+}
+
+.full-width-bar {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.my-svg path {
+    fill: #8a764b;
+}
+
+.filler:hover path{
+    fill: #C9A456;
+}
+
+/* Change fill to white on hover */
+.my-svg:hover path {
+    fill: #FFFFFF;
+}
+
+.my-svg2:hover path {
+    fill: #FFFFFF;
+}
+
+.image-container {
+    position: relative;
+    z-index: -20;
+}
+
+/* For smoother transitions */
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+.translate-x-0 {
+    transform: translateX(0);
+}
+
+.translate-x-full {
+    transform: translateX(100%);
+}
+
+.-translate-x-full {
+    transform: translateX(-100%);
+}
+
+.kumbh-sans {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+@media (max-width: 640px) {
+    .social-icon {
+        display: none;
+    }
+}
+
+
+
+.c-out-house {
+    z-index: 2;
+}
+
+.c-get-in-touch {
+    letter-spacing: .17rem;
+    font-weight: 200;
+}
+
+.c-image-wrapper {
+    /* Clip the overlay & image */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+    /* "Lifted" shadow */
+}
+
+.c-image-wrapper-2 {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+}
+
+.c-absolute-middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-13%, -46%);
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(168, 143, 94, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 40px rgba(168, 143, 94, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(168, 143, 94, 0);
+    }
+}
+
+.animate-pulse-custom {
+    animation: pulse 2s infinite;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+}
+
+.close-button {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.c-fade-gold{
+    left: -10rem !important;
+}
+
+.c-fade-gold-right{
+    right: -10rem !important;
+}
+
+.my-svg3:hover path.p1{
+    fill: rgba(167,137,73,0.12);
+}
+
+.my-svg3:hover path.p2{
+    fill: rgba(167, 137, 73, 0.87);
+}
